@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   devopsdb:
-    image: pavan3108/javaauto:db
+    image: pavan3108/todayjava:db
     ports:
       - "3306:3306"
     deploy:
@@ -10,7 +10,7 @@ services:
       - mynetwork
 
   application:
-    image: pavan3108/javaauto:app
+    image: pavan3108/todayjava:app
     ports:
       - "1111:8080"
     deploy:
